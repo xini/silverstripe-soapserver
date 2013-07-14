@@ -1,0 +1,9 @@
+---
+Name: soaproutes
+After:
+  - '#rootroutes'
+  - '#modelascontrollerroutes'
+---
+Director:
+  rules:
+    'soap/v1': 'SOAPModelAccess'
