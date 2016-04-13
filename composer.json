@@ -1,0 +1,18 @@
+{
+	"name": "silverstripe/soapserver",
+	"description": "SOAP server class which auto-generates a WSDL file to initialize PHPs integrated SoapServer functionality.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "soapserver", "restfulserver"],
+	"authors": [
+	{
+		"name": "Ingo Schommer",
+		"email": "ingo@silverstripe.com"
+	}
+	],
+	"minimum-stability": "dev",
+	"require":
+	{
+		"silverstripe/framework": "3.*",
+		"silverstripe/restfulserver": "dev-master"
+	}
+}
