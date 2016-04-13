@@ -8,6 +8,8 @@ Extended by `SOAPModelAccess` to scaffold WSDL for a specific class.
 **This module is just a wrapper for the "[restfulserver](https://github.com/silverstripe/silverstripe-restfulserver)" module,
 internally all SOAP calls are rewritten as RESTful calls**
 
+This module was originally developed as core part of the SilverStripe CMS, but since April 2106 is has been maintained by http://github.com/xini
+
 ## Requirements
 
  * SilverStripe 3.0 or newer
