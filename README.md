@@ -1,6 +1,10 @@
 # SilverStripe RestfulServer Module
 
-[![Build Status](https://api.travis-ci.org/xini/silverstripe-soapserver.png)](https://travis-ci.org/xini/silverstripe-soapserver)
+[![Build Status](http://img.shields.io/travis/xini/silverstripe-soapserver.svg?style=flat-square)](https://travis-ci.org/xini/silverstripe-soapserver)
+[![Code Quality](http://img.shields.io/scrutinizer/g/xini/silverstripe-soapserver.svg?style=flat-square)](https://scrutinizer-ci.com/g/xini/silverstripe-soapserver)
+[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/xini/silverstripe-soapserver.svg?style=flat-square)](https://scrutinizer-ci.com/g/xini/silverstripe-soapserver)
+[![Version](http://img.shields.io/packagist/v/innoweb/silverstripe-soapserver.svg?style=flat-square)](https://packagist.org/packages/innoweb/silverstripe-soapserver)
+[![License](http://img.shields.io/packagist/l/innoweb/silverstripe-soapserver.svg?style=flat-square)](LICENSE)
 
 ## Overview
 
