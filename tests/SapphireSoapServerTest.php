@@ -1,31 +1,29 @@
 <?php
 /**
- * @package framework
- * @subpackage tests
  */
-class SapphireSoapServerTest extends FunctionalTest {
-	
-	/**
-	 * @see http://open.silverstripe.com/ticket/4570
-	 */
-	function testWsdl() {
-		$response = $this->get('SapphireSoapServerTest_MyServer/wsdl');
-		
-		$this->assertEquals(
-			$response->getHeader('Content-Type'), 
-			'text/xml',
-			'wsdl request returns with correct XML content type'
-		);
-	}
+class SapphireSoapServerTest extends FunctionalTest
+{
+    /**
+     * @see http://open.silverstripe.com/ticket/4570
+     */
+    public function testWsdl()
+    {
+        $response = $this->get('SapphireSoapServerTest_MyServer/wsdl');
+
+        $this->assertEquals(
+            $response->getHeader('Content-Type'),
+            'text/xml',
+            'wsdl request returns with correct XML content type'
+        );
+    }
 }
 
 /**
- * @package framework
- * @subpackage tests
  */
-class SapphireSoapServerTest_MyServer extends SapphireSoapServer {
-	
-	function Link($action = null) {
-		return Controller::join_links('SapphireSoapServerTest_MyServer', $action);
-	}
+class SapphireSoapServerTest_MyServer extends SapphireSoapServer
+{
+    public function Link($action = null)
+    {
+        return Controller::join_links('SapphireSoapServerTest_MyServer', $action);
+    }
 }

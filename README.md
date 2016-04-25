@@ -14,7 +14,7 @@ This module was originally developed as core part of the SilverStripe CMS, but s
 
 ## Requirements
 
- * SilverStripe 3.0 or newer
+ * SilverStripe 3.1 or newer
  * "[restfulserver](https://github.com/silverstripe/silverstripe-restfulserver)" module
 
 ## Configuration

@@ -43,4 +43,3 @@ targetNamespace="{$ServiceURL}wsdl">
 		</port>
 	</service>
 </definitions>
-
