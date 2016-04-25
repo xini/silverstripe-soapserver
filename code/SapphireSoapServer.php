@@ -32,7 +32,7 @@ class SapphireSoapServer extends Controller {
 	);
 	
 	function wsdl() {
-		$this->getResponse()->addHeader("Content-Type", "text/xml"); 
+		$this->getResponse()->addHeader("Content-Type", "text/xml; charset=utf-8"); 
 		
 		return array();
 	}
@@ -93,6 +93,8 @@ class SapphireSoapServer extends Controller {
 		$fh = fopen($wsdlFile, 'w');
 		fwrite($fh, $wsdl);
 		fclose($fh);
+		
+		$this->getResponse()->addHeader("Content-Type", "text/xml; charset=utf-8"); 
 
 		$s = new SoapServer($wsdlFile, array('cache_wsdl' => WSDL_CACHE_NONE));
 		$s->setClass($this->class);
