@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.1]
+
+* fix tests and travis matrix
+
 ## [2.0.0]
 
 * Update code for SS 3.1

@@ -12,7 +12,7 @@ class SapphireSoapServerTest extends FunctionalTest
 
         $this->assertEquals(
             $response->getHeader('Content-Type'),
-            'text/xml',
+            'text/xml; charset=utf-8',
             'wsdl request returns with correct XML content type'
         );
     }
