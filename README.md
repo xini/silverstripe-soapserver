@@ -1,5 +1,7 @@
 # SilverStripe RestfulServer Module
 
+[![Build Status](https://api.travis-ci.org/xini/silverstripe-soapserver.png)](https://travis-ci.org/xini/silverstripe-soapserver)
+
 ## Overview
 
 SOAP server class which auto-generates a WSDL file to initialize PHPs integrated `SoapServer` functionality.
