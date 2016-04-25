@@ -1,9 +1,14 @@
 <?xml version="1.0"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" 
-xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:tns="{$ServiceURL}wsdl"
+<definitions name="SapphireSoapServer" 
+xmlns="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:tns="{$ServiceURL}wsdl" 
 targetNamespace="{$ServiceURL}wsdl">
+	<wsdl:documentation>
+		Service: Sapphire SOAP Server
+	</wsdl:documentation>
 	<% loop Methods %>
 	<message name="{$Name}Request" targetNamespace="$CurrentPage.TargetNamespace">
 		<% loop Arguments %>
