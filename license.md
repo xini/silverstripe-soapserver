@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2016, Floian Thoma
+Copyright (c) 2016, Florian Thoma
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, 
