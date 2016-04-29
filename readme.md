@@ -4,7 +4,7 @@
 [![Code Quality](http://img.shields.io/scrutinizer/g/xini/silverstripe-soapserver.svg?style=flat-square)](https://scrutinizer-ci.com/g/xini/silverstripe-soapserver)
 [![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/xini/silverstripe-soapserver.svg?style=flat-square)](https://scrutinizer-ci.com/g/xini/silverstripe-soapserver)
 [![Version](http://img.shields.io/packagist/v/innoweb/silverstripe-soapserver.svg?style=flat-square)](https://packagist.org/packages/innoweb/silverstripe-soapserver)
-[![License](http://img.shields.io/packagist/l/innoweb/silverstripe-soapserver.svg?style=flat-square)](LICENSE)
+[![License](http://img.shields.io/packagist/l/innoweb/silverstripe-soapserver.svg?style=flat-square)](license.md)
 
 ## Overview
 
@@ -21,36 +21,17 @@ This module was originally developed as core part of the SilverStripe CMS, but s
  * SilverStripe 3.1 or newer
  * "[restfulserver](https://github.com/silverstripe/silverstripe-restfulserver)" module
 
-## Configuration
+## Installation
+Install the module using composer:
+```
+composer require innoweb/silverstripe-soapserver dev-master
+```
+or download or git clone the module into a ‘soapserver’ directory in your webroot.
 
-Example DataObject with simple api access, giving full access to all object properties and relations,
-unless explicitly controlled through model permissions.
+Then run dev/build.
 
-	class Article extends DataObject {
-		static $db = array('Title'=>'Text','Published'=>'Boolean');
-		static $api_access = true;
-	}
+## License
+BSD 3-Clause License, see [License](license.md)
 
-## Usage
-
-Getting a record:
-
-	$c = new SoapClient('http://mysite.com/soap/v1/wsdl');
-	echo $c->getXML("MyClassName", 99); // gets record #99 as xml
-
-Updating a record:
-
-	$c = new SoapClient('http://mysite.com/soap/v1/wsdl');
-	$data = array('MyProperty' => 'MyUpdatedValue');
-	echo $c->putXML("MyClassName", 99, null, $data);
-
-Creating a record:
-
-	$c = new SoapClient('http://mysite.com/soap/v1/wsdl');
-	$data = array('MyProperty' => 'MyValue');
-	echo $c->putXML("MyClassName", null, null, $data);
-
-Creating a record:
-
-	$c = new SoapClient('http://mysite.com/soap/v1/wsdl');
-	echo $c->deleteXML("MyClassName");
+## Documentation
+ * See [Documentation index](docs/en/index.md)
