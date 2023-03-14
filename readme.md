@@ -1,5 +1,7 @@
 # SilverStripe RestfulServer Module
 
+**This is an archived project and is no longer maintained. Please do not file issues or pull-requests against this repo. If you wish to continue to develop this code yourself, we recommend you fork it or contact us.**
+
 [![Build Status](http://img.shields.io/travis/xini/silverstripe-soapserver.svg?style=flat-square)](https://travis-ci.org/xini/silverstripe-soapserver)
 [![Code Quality](http://img.shields.io/scrutinizer/g/xini/silverstripe-soapserver.svg?style=flat-square)](https://scrutinizer-ci.com/g/xini/silverstripe-soapserver)
 [![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/xini/silverstripe-soapserver.svg?style=flat-square)](https://scrutinizer-ci.com/g/xini/silverstripe-soapserver)
